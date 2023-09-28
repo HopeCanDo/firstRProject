@@ -1,0 +1,30 @@
+---
+title: "Assignment1RMarkdown"
+author: "Hope"
+date: "2023-09-28"
+output: html_document
+---
+
+# Wave plot
+
+```{r}
+# Create vectors x and y, and a data frame sin_df
+x <- seq(0, 20, by = 0.01)
+y <- sin(x)
+sin_df <- data.frame(x,y)
+
+# Display the first few rows of sin_df
+head(sin_df, 3)
+
+# Plot sin_df
+plot(sin_df$x, sin_df$y, type = "l", xlab = "x", ylab = "y", main = "Wave Plot")
+```
+
+# Fomula
+
+\[ \sin^2(x) + \cos^2(x) = 1 \]
+
+\[\sin(x)=\sum_{n=1}^{\infty}(-1)^{n+1}\cdot\frac{x^{2n-1}}{(2n-1)!}
+ \approx x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}\ldots. \]
+ 
+\[ A=\left(\begin{matrix} a_{11} & a_{12}\\ a_{21} & a_{22}\end{matrix}\right)\]
